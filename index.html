@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <!---------- Header Section Start --------->
+    <header>
+        <div class="navbar bg-base-100 shadow-2xl lg:px-12">
+            <div class="flex-1">
+              <a class="btn btn-ghost normal-case text-3xl">Fleuros<span class="text-green-800 font-bold">BD</span> </a>
+            </div>
+            <div class="flex-none gap-2">
+              <div class="form-control">
+                <input type="text" placeholder="Search" class="input input-bordered" />
+              </div>
+              <div class="dropdown dropdown-end">
+                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+                  <div class="w-10 rounded-full">
+                    <img src="img/LOGO.jpg" />
+                  </div>
+                </label>
+                <ul tabindex="0" class="mt-3 p-2 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52">
+                  <li>
+                    <a class="justify-between">
+                      Profile
+                      <span class="badge">New</span>
+                    </a>
+                  </li>
+                  <li><a>Settings</a></li>
+                  <li><a>Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+    <!---------- Header Section End --------->
+    <!---------- Main Section Start --------->
+    <main>
+    <!----------Section One Start --------->
+        <section class="lg:px-16 flex flex-col md:flex-row lg:flex-row gap-4">
+            <div class="pruduct-details mt-6 w-[60%] grid md:grid-cols-2 lg:grid-cols-3 gap-6 me-0">
+                <div class="card card-compact w-full bg-base-300 shadow-xl">
+                    <figure><img src="img/tea-1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="first-name" class="card-title text-2xl font-bold">Milk Tea</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p class="font-bold">Price: $<span id="first-price">220</span></p>
+                      <p class="font-bold">Quantity: <span id="first-quantity">2</span></p>
+                      <div class="card-actions justify-end">
+                        <button id="first-cart" class="btn btn-primary">ADD TO CART</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-compact w-full bg-base-300 shadow-xl">
+                    <figure><img src="img/tea-2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 class="card-title text-2xl font-bold">Chocolet Milk Shek</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p class="font-bold">Price: $<span>250</span></p>
+                      <p class="font-bold">Quantity: <span id="">7</span></p>
+                      <div class="card-actions justify-end">
+                        <button id="second-card" class="btn btn-primary">ADD TO CART</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-compact w-full bg-base-300 shadow-xl">
+                    <figure><img src="img/tea-3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="third-name" class="card-title text-2xl font-bold">Fruit Milk Tea</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p class="font-bold">Price: $<span id="third-total">150</span></p>
+                      <p class="font-bold">Quantity: <span id="third-quantity">10</span></p>
+                      <div class="card-actions justify-end">
+                        <button id="third-card" class="btn btn-primary">ADD TO CART</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-compact w-full bg-base-300 shadow-xl">
+                    <figure><img src="img/tea-4.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="four-name" class="card-title text-2xl font-bold">Ice Lemon Tea</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p class="font-bold">Price: $<span id="four-price">100</span></p>
+                      <p class="font-bold">Quantity: <span id="four-quantity">4</span></p>
+                      <div class="card-actions justify-end">
+                        <button id="four-card" class="btn btn-primary">ADD TO CART</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-compact w-full bg-base-300 shadow-xl">
+                    <figure><img src="img/fresh-2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="five-name" class="card-title text-2xl font-bold">Lemon Milk Shek</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <p class="font-bold">Price: $<span id="five-price">160</span></p>
+                      <p class="font-bold">Quantity: <span id="five-quantity">5</span></p>
+                      <div class="card-actions justify-end">
+                        <button id="five-card" class="btn btn-primary">ADD TO CART</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card card-compact w-full bg-base-300 shadow-xl">
+                    <figure><img src="img/fresh-1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                      <h2 id="six-name" class="card-title text-2xl font-bold">Orange Juice</h2>
+                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <div class="form-control w-full max-w-xs">
+
+                        <input id="six-price" type="text" placeholder="Price" class="input input-bordered w-full max-w-xs mb-2" />
+                        <input id="six-quantity" type="text" placeholder="Quantity" class="input input-bordered w-full max-w-xs" />
+
+                        </div>
+                      <div class="card-actions justify-end">
+                        <button id="six-card" class="btn btn-primary">ADD TO CART</button>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="cart-details w-full md:w-[30%] lg:w-[30%] mx-auto mt-6 bg-base-300">
+                <h1 class="text-3xl font-bold text-center underline">Total Product: <span>0</span></h1>
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th>SL</th>
+                          <th>Name</th>
+                          <th>Price</th>
+                          <th>Quantity</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody id="table-container">
+                        <!-- row 1 -->
+                        <!-- <tr>
+                          <th>1</th>
+                          <td>Cy Ganderton</td>
+                          <td>Quality Control Specialist</td>
+                          <td>Blue</td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </section>
+    <!----------Section One End --------->
+    </main>
+    <!---------- Main Section End --------->
+    <br><br>
+     <!---------- JavaScript Section Star --------->
+    <script src="scripte.js"></script>
+</body>
+</html>
